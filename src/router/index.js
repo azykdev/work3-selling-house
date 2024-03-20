@@ -1,25 +1,65 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: "/",
+    redirect: "/login",
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
-]
+    path: "/",
+    component: () => import("@/layouts/auth.vue"),
+    children: [
+      {
+        path: "/login",
+        name: "login",
+        component: () => import("@/views/auth/login-view.vue"),
+      },
+      {
+        path: "/register",
+        name: "register",
+        component: () => import("@/views/auth/register-view.vue"),
+      },
+      
+    ],
+  },
+  {
+    path: "/",
+    component: () => import("@/layouts/authority.vue"),
+    children: [
+      {
+        path: "/home_authority",
+        name: "home_authority",
+        component: () => import("@/views/authority/authority-view.vue"),
+      },
+    ],
+  },
+  {
+    path: "/",
+    component: () => import("@/layouts/citizen.vue"),
+    children: [
+      {
+        path: "/home_citizen",
+        name: "home_citizen",
+        component: () => import("@/views/citizen/citizen-view.vue"),
+      },
+    ],
+  },
+  {
+    path: "/",
+    component: () => import("@/layouts/construction-company.vue"),
+    children: [
+      {
+        path: "/home_construction_company",
+        name: "home_construction_company",
+        component: () => import("@/views/construction-company/construction-company-view.vue"),
+      },
+    ],
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
