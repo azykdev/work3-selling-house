@@ -1,12 +1,12 @@
 <template>
   <div>
-    <RouterView />
+    <h1>404 View</h1>
   </div>
 </template>
 
 <script>
   export default {
-    
+    name: "404View"
   }
 </script>
 

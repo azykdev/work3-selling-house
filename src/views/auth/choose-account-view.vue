@@ -1,12 +1,12 @@
 <template>
   <div>
-    <RouterView />
+    <h1>Choose Account View</h1>
   </div>
 </template>
 
 <script>
   export default {
-    
+    name: "ChooseAccountView"
   }
 </script>
 

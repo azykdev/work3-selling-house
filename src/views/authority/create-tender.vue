@@ -1,12 +1,12 @@
 <template>
   <div>
-    <RouterView />
+    <h1>Create Tender</h1>
   </div>
 </template>
 
 <script>
   export default {
-    
+    name: "CreateTender"
   }
 </script>
 
