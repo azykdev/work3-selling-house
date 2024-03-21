@@ -1,0 +1,11 @@
+BASIC COLORS -------------------- *** *** *** -------------------------
+
+#fff - oq
+#301C3B - dark (logo icon)
+#db6ac1 - pushti (logo text)
+#7366ff - Ko'k (logo text)
+
+#F0EBE3 - qaymoq
+#E4DCCF - qaymoq 2
+#7D9D9C - kulrang
+#576F72 - dark kulrang
