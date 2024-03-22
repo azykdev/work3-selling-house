@@ -1,29 +1,58 @@
 <template>
-  <nav id="nav" class="bg-transparent h-[10vh] w-full">
-    <div id="nav-wrapper"
-      class="md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-x mx-auto py-3 flex items-center justify-between h-full">
+  <nav id="home-navbar" class=" h-[72px] fixed transition-colors duration-300 top-0 left-0 right-0 z-[999]"
+    :class="scroll ? 'scrolled' : ''">
+    <div id="home-navbar-wrapper"
+      class="max-w-screen-lg xl:max-w-screen-xl mx-auto flex justify-between items-center h-full px-3">
       <!-- logo -->
-      <router-link to="/">
-        <img src="@/assets/images/logo/selling-house-high-resolution-logo-transparent.png" alt="logo" class=" w-44">
-      </router-link>
+      <div class="flex items-center">
+        <img src="../assets/images/logo/selling-house-logo3.png" alt="logo" class="h-[50px]">
+        <p class="text-white md:text-2xl text-xl font-bold gradient-text1 b">
+          Selling House
+        </p>
+      </div>
 
-      <!-- nav links -->
-      <div class="">
+      <!-- menu -->
+      <div class="hidden sm:block">
         <ul class="flex">
-          <li class="">
-            <router-link to="/login"
-              class=" text-lg bg-color4 hover:bg-color3 transition-colors border rounded-[5px] py-2 px-3 text-indigo-50">Kirish</router-link>
-          </li>
+          <li class="me-3"><a href="#">Home</a></li>
+          <li class="me-3"><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
+
+      <!-- button -->
+      <v-btn class="bg-grey-darken-3 text-white">Login</v-btn>
+
     </div>
   </nav>
 </template>
 
-<script>
-export default {
-  name: 'HomeNavbar'
-}
+<script setup>
+import { ref, onMounted } from 'vue';
+
+const scroll = ref(false);
+
+onMounted(() => {
+  window.onscroll = () => {
+    if (window.scrollY > 0) {
+      scroll.value = true;
+    } else {
+      scroll.value = false;
+    }
+  }
+})
+
+
 </script>
 
-<style scoped></style>
+<style scoped>
+#home-navbar {
+  opacity: 1;
+  background-color: transparent;
+}
+
+#home-navbar.scrolled {
+  background-color: #2a2a2a;
+  opacity: 0.98;
+}
+</style>

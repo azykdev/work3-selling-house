@@ -1,32 +1,22 @@
 <template>
-  <header id="header" class="h-screen bg-slate-50 px-2">
-    <!-- Navbar -->
-    <HomeNavbar />
+  <HomeNavbar />
+  <HomeHeader />
 
-    <!-- Header content -->
-    <HomeHeaderContent />
-
-
-  </header>
 </template>
 
 <script>
-import HomeNavbar from '@/components/home-navbar.vue'
-import HomeHeaderContent from '@/components/home-header-content.vue'
+import { HomeHeader } from '@/components';
+import { HomeNavbar } from '@/components';
+
+
+
 export default {
   name: 'HomeView',
   components: {
-    HomeNavbar,
-    HomeHeaderContent
+    HomeHeader,
+    HomeNavbar
   }
 }
 </script>
 
-<style scoped>
-#header {
-  height: 100vh;
-  background: url('@/assets/images/home/header.png') no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-</style>
+<style scoped></style>

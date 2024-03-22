@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Poppins Regular */
+@font-face {
+  font-family: 'poppins-regular';
+  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+/* Poppins Bold */
+@font-face {
+  font-family: 'poppins-bold';
+  src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+:root {
+  --color1: #ffffff;
+  --color2: #ffefe2;
+  --color3: #edcaac;
+  --color4: #ededed;
+  --color5: #2a2a2a;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins-regular', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'poppins-bold', sans-serif;
+  color: var(--color5);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Gradient */
+.gradient-text1 {
+  background: -webkit-linear-gradient(60deg, var(--color5), var(--color3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text2 {
+  background: -webkit-linear-gradient(160deg, #ff6262, #ff957d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-shape {
+  position: absolute;
+  z-index: -1;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+

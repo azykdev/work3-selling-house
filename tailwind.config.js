@@ -4,15 +4,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        logoDark: "#301C3B",
-        logoPushti: "#db6ac1",
-        logoKok: "#7366ff",
-
-        color1: "#F0EBE3",
-        color2: "#E4DCCF",
-        color3: "#7D9D9C",
-        color4: "#576F72",
+        color1: "#ffffff",
+        color2: "#ffefe2",
+        color3: "#edcaac",
+        color4: "#ededed",
+        color5: "#2a2a2a",
       },
+      fontFamily: {
+        poppinsRegular: ["poppins-regular", "sans-serif"],
+        poppinsBold: ["poppins-bold", "sans-serif"],
+      },
+
     },
     screens: {
       sm: "600px",
