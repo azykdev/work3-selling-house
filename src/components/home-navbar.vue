@@ -5,23 +5,26 @@
       class="max-w-screen-lg xl:max-w-screen-xl mx-auto flex justify-between items-center h-full px-3">
       <!-- logo -->
       <div class="flex items-center">
-        <img src="../assets/images/logo/selling-house-logo3.png" alt="logo" class="h-[50px]">
-        <p class="text-white md:text-2xl text-xl font-bold gradient-text1 b">
+        <img src="../assets/images/logo/selling-house-logo5.png" alt="logo" class="h-[50px]">
+        <p class="text-white md:text-xl text-xl font-bold gradient-text1 b">
           Selling House
         </p>
+
+        <!-- menu -->
+        <div class="hidden sm:block ms-10">
+          <ul class="flex">
+            <li class="me-3"><a href="#">Home</a></li>
+            <li class="me-3"><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </div>
 
-      <!-- menu -->
-      <div class="hidden sm:block">
-        <ul class="flex">
-          <li class="me-3"><a href="#">Home</a></li>
-          <li class="me-3"><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+
 
       <!-- button -->
-      <v-btn class="bg-grey-darken-3 text-white">Login</v-btn>
+      <v-btn class="bg-deep-orange-lighten-2
+ text-white">Login</v-btn>
 
     </div>
   </nav>
@@ -52,7 +55,7 @@ onMounted(() => {
 }
 
 #home-navbar.scrolled {
-  background-color: #2a2a2a;
+  background-color: #fbfbfbf9;
   opacity: 0.98;
 }
 </style>

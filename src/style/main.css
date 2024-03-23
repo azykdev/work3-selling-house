@@ -2,24 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Poppins Regular */
-@font-face {
+/* @font-face {
   font-family: 'poppins-regular';
   src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
-}
+} */
 
 /* Poppins Bold */
-@font-face {
+/* @font-face {
   font-family: 'poppins-bold';
   src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
-}
+} */
 
 :root {
   --color1: #ffffff;
-  --color2: #ffefe2;
-  --color3: #edcaac;
+  --color2: #6DD5FA;
+  --color3: #2980B9;
   --color4: #ededed;
-  --color5: #2a2a2a;
+  --color5: #444444;
 }
 
 
@@ -27,7 +29,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'poppins-regular', sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
 body {
@@ -36,7 +38,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'poppins-bold', sans-serif;
+  font-weight: bold;
   color: var(--color5);
 }
 
@@ -53,20 +55,19 @@ ul {
 
 /* Gradient */
 .gradient-text1 {
-  background: -webkit-linear-gradient(60deg, var(--color5), var(--color3));
+  background: -webkit-linear-gradient(60deg, #ffc784, #ffa1a1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-text2 {
-  background: -webkit-linear-gradient(160deg, #ff6262, #ff957d);
+  background: -webkit-linear-gradient(60deg, #eea9ff, #FBD786, #f7797d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-shape {
   position: absolute;
-  z-index: -1;
   width: 300px;
   height: 300px;
   border-radius: 50%;
