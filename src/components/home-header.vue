@@ -4,8 +4,11 @@
     <div class="gradient-shape top-[35%] left-[-15%] bg-orange-200 filter blur-[180px] ">
     </div>
 
+    <!-- dialog -->
+    <HomeDialog />
+
     <div id="home-header-wrapper"
-      class="max-w-screen-lg xl:max-w-screen-xl mx-auto p-5 h-[calc(100vh-72px)] flex items-center ">
+      class="max-w-screen-lg xl:max-w-screen-xl mx-auto p-5 min-h-[calc(100vh-72px)] flex items-center ">
       <div class=" sm:w-2/3 md:w-1/2 text-center text-sm-start">
         <h1 class="text-5xl md:text-7xl font-bold"><span class="gradient-text2 font-bold">Lorem ipsum</span> sit
           amet
@@ -15,9 +18,7 @@
           Adipisci, autem dolore. Eaque accusantium asperiores, earum culpa sint, est deserunt illo accusamus,
           necessitatibus ratione nisi laudantium.</p>
 
-        <v-btn class="bg-deep-orange-lighten-2
-
- text-white">Get Started</v-btn>
+        <v-btn class="bg-deep-orange-lighten-2 text-white">Get Started</v-btn>
       </div>
     </div>
   </header>
@@ -92,8 +93,10 @@
 </template>
 
 <script>
+import { HomeDialog } from "@/ui-components";
 export default {
-  name: "HomeHeader"
+  name: "HomeHeader",
+  components: { HomeDialog }
 }
 </script>
 

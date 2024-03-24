@@ -23,7 +23,7 @@
 
 
       <!-- button -->
-      <v-btn class="bg-deep-orange-lighten-2
+      <v-btn @click="setHomeDialog" class="bg-deep-orange-lighten-2
  text-white">Login</v-btn>
 
     </div>
@@ -32,7 +32,9 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { useStore } from 'vuex';
 
+const store = useStore();
 const scroll = ref(false);
 
 onMounted(() => {
@@ -44,6 +46,12 @@ onMounted(() => {
     }
   }
 })
+
+// MUTATIONS
+const setHomeDialog = () => {
+  store.commit('setHomeDialog', true)
+
+}
 
 
 </script>

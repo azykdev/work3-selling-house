@@ -1,15 +1,13 @@
 <template>
-  <div>
+  <section id="login" class="h-screen">
     <h1>Login View</h1>
-  </div>
+  </section>
 </template>
 
 <script>
-  export default {
-    
-  }
+export default {
+  name: "LoginView"
+}
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

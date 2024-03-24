@@ -1,14 +1,18 @@
 <template>
-  <router-view v-slot="{ Component }">
+  <RouterView v-slot="{ Component }">
     <Transition name="route" mode="out-in">
       <component :is="Component"></component>
     </Transition>
-  </router-view>
+  </RouterView>
 </template>
 
 <script>
+import { RouterView } from 'vue-router';
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    RouterView
+  } 
 }
 </script>
 
