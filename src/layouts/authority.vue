@@ -34,7 +34,8 @@
 
 
       <v-main class="">
-        <v-toolbar image="" dark prominent class=" fixed top-0 " elevation="5">
+        <v-toolbar image="https://4kwallpapers.com/images/wallpapers/gradient-background-1920x1080-10974.jpg" dark
+          prominent class=" fixed top-0 " elevation="5">
 
           <div id="logo" class="flex items-center ">
             <img src="@/assets/images/logo/selling-house-logo1.png" alt="" width="50px" class="p-1 ms-2">
