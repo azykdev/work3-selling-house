@@ -38,6 +38,16 @@ const routes = [
         component: () =>
           import("@/views/authority/authority-dashboard-view.vue"),
       },
+      {
+        path: "authority/new-tender",
+        name: "authority_new_tender",
+        component: () => import("@/views/authority/new-tender-view.vue"),
+      },
+      {
+        path: "authority/victory-tender",
+        name: "authority_victory_tender",
+        component: () => import("@/views/authority/victory-tender-view.vue"),
+      },
     ],
   },
 ];

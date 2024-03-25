@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Create Tender</h1>
+    <h1>yengi Tender</h1>
   </div>
 </template>
 

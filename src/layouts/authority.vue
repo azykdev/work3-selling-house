@@ -13,7 +13,7 @@
 
         <v-list nav>
           <!-- dashboard list item -->
-          <v-list-item prepend-icon="mdi-view-dashboard" title="Dashboard" value="dashboard"></v-list-item>
+          <v-list-item prepend-icon="mdi-view-dashboard" title="Dashboard" value="dashboard" to="/authority/dashboard"></v-list-item>
 
           <!-- users list item -->
           <v-list-group value="Tender">
@@ -21,8 +21,9 @@
               <v-list-item v-bind="props" prepend-icon="mdi-gavel" title="Tender"></v-list-item>
             </template>
 
-            <v-list-item class="bg-blue-grey-darken-2" v-for="([title, icon], i) in TenderItems" :key="i" :title="title"
-              :value="title"></v-list-item>
+            <v-list-item class="bg-blue-grey-darken-2" v-for="([title, route], i) in TenderItems" :key="i" :title="title"
+              :value="title" :to="{name: route}">
+            </v-list-item>
 
           </v-list-group>
 
@@ -68,10 +69,10 @@ export default {
   data() {
     return {
       TenderItems: [
-        ['Yangi tender', 'mdi-account-multiple-outline'],
-        ['Tender G\'olibi', 'mdi-cog-outline'],
-        ['Tenderni yompish', 'mdi-cog-outline'],
-        ['Tender qayta o\'tkazish', 'mdi-cog-outline'],
+        ['Yangi tender', 'authority_new_tender'],
+        ['Tender G\'olibi', 'authority_victory_tender'],
+        ['Tenderni yompish', ''],
+        ['Tender qayta o\'tkazish', ''],
       ],
     }
   },
