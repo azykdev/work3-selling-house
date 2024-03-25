@@ -48,11 +48,11 @@ export default {
           }
         }
 
-        if (this.accountType === 'construction-company') {
+        if (this.accountType.id === 'construction-company') {
           let constructionCompany = this.constructionCompanies.find((constructionCompany) => constructionCompany.userName === this.loginFormData.username && constructionCompany.password === this.loginFormData.password)
 
           if (constructionCompany) {
-            this.$router.push({ name: 'construction-company' })
+            this.$router.push({ name: 'construction_company' })
           } else {
             alert('Login yoki parol noto\'g\'ri (construction-company)')
           }
