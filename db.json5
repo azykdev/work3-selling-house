@@ -1,32 +1,15 @@
 {
   authorities: [
     {
-      userName: "authority1",
-      password: "12345678"
+      userName: "test",
+      password: "1234",
     },
-    {
-      userName: "authority2",
-      password: "12345678"
-    }
   ],
   construction_companies: [
     {
-      userName: "construction1",
-      password: "12345678"
-    },
-    {
-      userName: "constructio2",
-      password: "12345678"
+      userName: "test",
+      password: "1234",
     },
   ],
-  admins: [
-    {
-      userName: "admin1",
-      password: "12345678"
-    },
-    {
-      userName: "admin2",
-      password: "12345678"
-    },
-  ]
+  
 }

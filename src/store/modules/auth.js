@@ -34,7 +34,6 @@ const actions = {
     return new Promise((resolve, reject) => {
       commit('loginStart')
       AuthApi.login(data).then((res) => {
-        console.log(res);
         commit('loginSuccess')
         resolve(res)
       }).catch((error) => {

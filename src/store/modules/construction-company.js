@@ -1,4 +1,4 @@
-import ConstructionCompanyApi from "@/api/constructionCompany";
+import ConstructionCompanyApi from "@/api/construction-company";
 
 const state = {
   loading: false,
@@ -28,7 +28,6 @@ const actions = {
       commit("getConstructionCompaniesStart");
       ConstructionCompanyApi.getConstructionCompanies()
         .then((res) => {
-          console.log(res);
           commit("getConstructionCompaniesSuccess", res.data);
           resolve(res);
         })

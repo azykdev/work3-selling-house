@@ -1,7 +1,7 @@
 <template>
   <header id="home-header" class="relative overflow-hidden min-h-screen pt-[72px]">
     <!-- gradient shape -->
-    <div class="gradient-shape top-[35%] left-[-15%] bg-orange-200 filter blur-[180px] ">
+    <div class="gradient-shape top-[35%] left-[-15%] bg-orange-200 filter blur-[180px] hidden md:block ">
     </div>
 
     <!-- dialog -->

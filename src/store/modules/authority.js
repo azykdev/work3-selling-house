@@ -28,7 +28,6 @@ const actions = {
       commit("getAuthoritiesStart");
       AuthorityApi.getAuthorities()
         .then((res) => {
-          console.log(res);
           commit("getAuthoritiesSuccess", res.data);
           resolve(res);
         })
