@@ -1,13 +1,32 @@
 {
-  posts: [
-    { id: '1', title: 'a title', views: 100 },
-    { id: '2', title: 'another title', views: 200 },
+  authorities: [
+    {
+      userName: "authority1",
+      password: "12345678"
+    },
+    {
+      userName: "authority2",
+      password: "12345678"
+    }
   ],
-  comments: [
-    { id: '1', text: 'a comment about post 1', postId: '1' },
-    { id: '2', text: 'another comment about post 1', postId: '1' },
+  construction_companies: [
+    {
+      userName: "construction1",
+      password: "12345678"
+    },
+    {
+      userName: "constructio2",
+      password: "12345678"
+    },
   ],
-  profile: {
-    name: 'typicode',
-  },
+  admins: [
+    {
+      userName: "admin1",
+      password: "12345678"
+    },
+    {
+      userName: "admin2",
+      password: "12345678"
+    },
+  ]
 }

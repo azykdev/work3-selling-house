@@ -63,7 +63,34 @@ const routes = [
         path: "login",
         name: "login",
         component: () => import("@/views/auth/login-view.vue"),
-      }
+      },
+      {
+        path: "register",
+        name: "register",
+        component: () => import("@/views/auth/register-view.vue"),
+      },
+      {
+        path: "/:pathMatch(.*)*",
+        name: "404",
+        component: () => import("@/views/error/404-view.vue"),
+      },
+
+      // Vaqtincha
+      {
+        path: "citizen",
+        name: "citizen",
+        component: () => import("@/views/citizen/citizen-view.vue"),
+      },
+      {
+        path: "construction_company",
+        name: "construction_company",
+        component: () => import("@/views/construction-company/construction-company-view.vue"),
+      },
+      {
+        path: "authority",
+        name: "authority",
+        component: () => import("@/views/authority/authority-view.vue"),
+      },
     ],
   },
 ];
